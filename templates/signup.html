@@ -1,0 +1,37 @@
+﻿<ion-view view-title="Sign Up">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon ion-ios-arrow-back" ui-sref="app.login"></button>
+    </ion-nav-buttons>
+    <ion-content class="signup">
+        <form name="signform">
+            
+                <label>Full Name</label>
+            <span style="color:#ffdc7d" ng-show="signform.fullname.$dirty && signform.fullname.$invalid">
+            <span ng-show="signform.fullname.$error.required">*is required.</span>
+            </span>   
+                <input name="fullname" type="text" ng-model="user.fullname" required>        
+            <!--<label>Username</label>
+            <span style="color:#ffdc7d" ng-show="signform.username.$dirty && signform.username.$invalid">
+                <span ng-show="signform.username.$error.required">*is required.</span>
+            </span>
+            <input name="username" type="text" ng-model="user.username" required>-->
+            <label>Email</label>
+            <span style="color:#ffdc7d" ng-show="signform.email.$dirty && signform.email.$invalid">
+                <span ng-show="signform.email.$error.required">Email is required.</span>
+                <span ng-show="signform.email.$error.email">Invalid email address.</span>
+            </span>
+            <input name="email" type="email" ng-model="user.email" required>
+            <label>Password</label>
+            <span style="color:#ffdc7d" ng-show="signform.password.$dirty && signform.password.$invalid">
+                <span ng-show="signform.password.$error.required">*is required.</span>
+            </span>
+            <input name="password" type="password" ng-model="user.password" required>
+            <label>Confirm Password</label>
+            <input name="confpass" type="password" ng-model="user.confpass" required>
+            
+            <button ng-disabled="signform.fullname.$dirty && signform.fullname.$invalid ||
+            signform.email.$dirty && signform.email.$invalid ||signform.password.$dirty && signform.password.$invalid" class="button icon-right ion-chevron-right button-outline button-light" ng-click="register()">SUBMIT</button>
+        </form>
+</ion-content>
+
+</ion-view>

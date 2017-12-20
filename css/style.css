@@ -1,0 +1,727 @@
+﻿
+
+.scroll {
+    height: 100%;
+}
+
+.call, .add, .about, .private, .signup, .important-2, .profile, .login {
+ background-image: url('../img/bg.png');
+ background-size:cover;
+}
+
+.call h3,.about h3,.signup h3{
+    color:white;
+    text-align:center;
+    padding-top:10px;
+    margin-top:15px;
+}
+
+.bar-positive {
+    background-color:#391239 !important;
+    border:none;
+}
+
+.home ::-webkit-input-placeholder, .call ::-webkit-input-placeholder,.private ::-webkit-input-placeholder{
+  color: white !important;
+} 
+
+.home {
+ background-image: url('../img/bg.png');
+ background-size:cover;
+ overflow:hidden;
+  
+}
+
+.home table a{
+    padding:0;
+    border:none;
+}
+
+.home>div:nth-child(1){
+     padding-top:10px;
+    text-align:center;
+}
+
+.home>div:nth-child(1) p{
+    color:white;
+    font-size:large;
+}
+
+.home>div:nth-child(1) img{
+    width:45%;
+}
+
+.home div:nth-child(3){
+       text-align:center;
+       margin-top:15px;
+       height:55%;
+}
+
+.home div:nth-child(3) img{
+   width:100%;
+}
+
+.home div:nth-child(4){
+    position: absolute; 
+    bottom: 0px; 
+    width: 100%;
+}
+
+.home div:nth-child(4) p{
+    font-size:small;
+}
+
+.bar-footer{
+    margin-bottom: 15px;
+}
+
+
+#div-2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom:5px;
+  /*border-bottom:solid 1px white;*/
+  
+}
+
+#div-2 .list{
+  background-color: transparent !important;
+  border:solid white 1px;
+  border-radius:12px;
+
+}
+
+#div-2 .item{
+    background-color: transparent !important; 
+    padding-top:0;
+    padding-bottom:0;
+}
+
+#div-2 i,#div-2 input {
+    color:white;
+    
+}
+
+#div-2 div{
+    width:75%;
+}
+
+
+.call table {
+    width:100%;
+    border:solid;
+    border-color:white;
+    margin-bottom:0;
+}
+
+.call tr:nth-child(1)>td:nth-child(1){
+    width:70%;
+    vertical-align:top;
+    text-align:left;
+    padding-left:12px;
+    padding-top:8px;
+}
+
+.call tr:nth-child(1)>td:nth-child(2){
+    vertical-align:middle;
+    background-color:#41B758;
+    border-left:solid white;
+}
+
+.call tr:nth-child(2)>td:nth-child(1){
+    text-align:right;
+    padding-right:10px;
+}
+
+.call tr:nth-child(1)>td:nth-child(1)>label:nth-child(1) {
+    color:white;
+    font-size:12pt;     
+}
+
+.call tr:nth-child(2)>td:nth-child(1)>label:nth-child(1) {
+    display:block;
+    text-align: right;
+    width: 100%;
+    color:white;
+    font-size:x-large;    
+    
+}
+
+.call .button-clear{
+    max-height: none;
+}
+
+.call-item{
+    background-color:transparent;
+    border:none
+}
+
+.call-item div:nth-child(2){
+    display: block;
+}
+
+#btn-detail{
+    width:68%;
+    color:white;
+    margin-left:6px;
+    margin-top:0px;
+    border:solid;
+    border-top:none;
+    border-top-left-radius:0; 
+    border-top-right-radius:0;
+    border-bottom-left-radius:10px; 
+    border-bottom-right-radius:10px;
+}
+
+.add table {
+    width:100%;
+    margin:20px;
+    color:white;   
+}
+
+/*.add table td {
+    height: 35px;
+}*/
+
+/* ------------------ CSS login -------------------- */
+/*.bglogin{
+    background-image: url('../img/bg.png');
+    background-size: cover;
+}*/
+
+.headerjudul{
+    background-color: #391239;
+    color: white;
+    background-size: 100% 0px;
+}
+
+.headerjudul p{
+    font-size: 17px;
+    margin: auto;
+}
+
+.footerbar{
+    background-color:transparent;
+    background-image: none !important;
+    border:0px !important;
+    font-size: 12px;
+}
+
+.footerbar p{
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.login div:nth-child(2){
+    margin-top: 30%;
+    text-align: center;
+}
+
+.login div:nth-child(2) img{
+    width: 43%;
+}
+
+.login div:nth-child(3){
+     margin-top: 20%; 
+}
+
+.login div:nth-child(3) label{
+    width: 80%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 44px;
+    background-color:white;
+}
+
+.login div:nth-child(3) input{
+    text-align: center;
+}
+
+.login .ion-person:before, .ion-locked:before{
+    font-size: 25px;
+    
+}
+
+.login div:nth-child(3) p {
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.login table {
+    margin: 0 auto;
+    width:80%;
+    text-align:center;
+
+}
+.login td{
+    width:50%;
+}
+
+.login button{
+    width:90%;
+    border-radius:17px;
+    border-width:2px;
+    margin-top: 5%;
+}
+
+.login div:nth-child(3) p {
+    margin-top:20px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.login div:nth-child(3) p a {
+    color: white;
+}
+
+/* ------------------ CSS About -------------------- */  
+
+.about div:nth-child(1) p {
+color:white;
+text-align:center;
+font-size:medium;
+}
+
+.about div{
+    padding-left:10px;
+    padding-right:10px;
+    text-align:center;
+}
+
+.about img{
+    width:90%;
+}
+
+.about h3 {
+    margin-top:0;
+}
+/*.about div:nth-child(4) img{
+    width:40%;
+}*/
+
+/*-----Side Menu-------*/
+
+.sideprofile{
+    /*height: 25%;*/
+    background-color: #391239;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: white solid 1px;
+    text-align:center;
+}
+
+.fotoprofile img{
+    border-radius: 100%;
+}
+
+.fotoprofile, .infoprofile{
+    text-align: center;
+}
+
+.infoprofile .namaprofile{
+    font-size: 14px;
+    color: white;
+    font-weight: lighter;
+}
+
+.infoprofile{
+    margin-top: 3px;
+}
+
+.sidemenucontent{
+    background-color: #391239;
+}
+
+/* garis side menu transparan*/
+ .sidemenu .item-complex .item-content{
+   background-color: transparent;
+}
+
+.sidemenu .item{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
+
+.sidemenu .item:active{
+    background-color: #c2194b;
+    color: #391239;
+    border-color: transparent;
+}
+
+.item-icon-left .icon{ /*---> merubah ukuran icon di list sidemenu*/
+    font-size:30px;
+}
+
+
+/*-------SignUp-------*/
+.signup {
+    padding:15px;
+}
+
+.signup button-clear{
+max-height: none;
+}
+
+.signup label{
+color:white;
+font-size:medium;
+margin-left: 5px;
+}
+
+.signup input{
+    background-color:transparent;
+    border:1px solid white;
+    padding:5px;
+    border-radius:8px;
+    width:97%;
+    margin:5px;
+    color:white;
+}
+
+.signup a, .signup button {
+    background-color:transparent;
+    border:1px solid white; 
+    border-radius:8px;
+    width:70%;
+    margin-top:10px;
+    margin-left:5px;
+    color:white;
+}
+
+.signup select {
+    background-color:transparent;
+    color:white;border:1px white solid;
+    border-radius:5px;
+    width:100%;
+    height:35px;
+    margin:5px;
+}
+/*-private-*/
+.tinggiprivate{
+    height: 110px;
+     border: white solid 2px;
+     margin-top:20px;
+     margin-left:15px;
+     margin-right:15px;
+
+}
+
+.btnprivate{
+    width: 100%;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.tblprivate{
+    width: 100%;
+   
+}
+
+.tblprivate tr td{
+    color: white;
+    /*border: black solid 1px;*/
+}
+
+.tblprivate tr:nth-child(1) > td:nth-child(1){
+    text-align: left;
+    padding-left: 15px;    
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tblprivate tr:nth-child(1) > td:nth-child(2){
+    vertical-align: middle;
+    font-size: 25px;
+    width: 15%;
+    padding-left: 10px;
+}
+
+.tblprivate tr:nth-child(2) > td:nth-child(1){
+    font-size: 15px;
+    word-wrap: normal;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    line-height: 20px;
+}
+
+.bagprivate{
+    background-color: transparent;
+    border: none;
+}
+
+.btnaddpriv{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btnaddpriv a > img{
+    width: 35%;
+}
+
+.btnaddpriv button > img{
+    margin:10px;
+    width: 40%;
+}
+
+.no_material .item, .item-complex .item-content{
+   background-color:transparent;
+}
+
+/*---important-detail---*/
+.important-2 div div{
+  border:2px solid white;
+  height:15%;
+  margin-top:20px;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.important-2 .button-clear{
+    max-height: none;
+}
+
+.important-2 button{
+    background-color:transparent;
+    height:100%;
+}
+
+.important-2 table{
+    width:100%;
+    color:white;
+}
+
+.important-2 td {
+    padding:10px;
+    vertical-align:middle;
+}
+.important-2 td:nth-child(1){
+    width:30%;
+
+}
+
+.important-2 td:nth-child(1)>img{
+    width:70%;
+}
+
+.important-2 td:nth-child(2){
+    font-size:x-large;
+    text-align:left;
+
+}
+
+.important-2 td:nth-child(3) {
+    font-size:xx-large;
+        
+}
+
+#user { 
+    margin-top:50px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile {
+    padding:20px;
+}
+.profile div div:nth-child(1){
+    text-align:center;
+    height:40%;   
+    color:white;
+}
+
+.profile a{
+    color:white;
+    background-color:transparent;
+}
+
+.profile div:nth-child(2),.profile div:nth-child(3){
+    text-align:center;
+    padding:10px;
+    width:100%;
+}
+.profile div:nth-child(2) label{
+    color:white;
+    border-bottom:1px solid white;
+    font-size:x-large;
+}
+
+.icon-edit {
+    content: url('../img/edit-button.png');
+    width:50px;
+}
+
+.profile div:nth-child(3) a.button{
+    border:solid 1px;
+    border-radius:8px;
+    display:inline;
+    padding-left:5%;
+    padding-right:5%;
+    padding-bottom:2%;
+    padding-top:1%;
+}
+
+/*----*/
+.item-complex .item-content, .item{
+    background-color: transparent;
+}
+
+.item-complex .item-content, 
+.item-radio .item-content{
+    padding: 16px 16px 16px 16px;
+}
+
+.listtransparan{
+    background-color: transparent;
+    border: none;
+    padding-bottom:0;
+    padding-top:5px;
+}
+
+.btnslide{
+    width: 180px;
+    background-color: transparent;
+
+}
+
+.btnslide:active{
+    background-color:transparent;
+}
+
+.btnslide p{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+.btnslide p:active{
+    color: yellow;
+}
+
+.btnslide p i{
+    font-size: 22px;
+    padding-right: 10px;
+}
+
+.tblfamily{
+    width: 98% !important;
+}
+
+.tblfamily tr:nth-child(1) > td:nth-child(1){
+    width:70%;
+    vertical-align:top;
+    text-align:left;
+    padding-left:5px
+}
+
+.tblfamily tr:nth-child(1) > td:nth-child(2){
+    vertical-align:middle;
+    background-color:#41B758;
+    border-left:solid white
+}
+
+.tblfamily tr:nth-child(1) > td:nth-child(3){
+    color: white;
+}
+
+.tblfamily tr:nth-child(2) > td:nth-child(1) > p{
+    font-size: 25px !important;
+}
+
+.tblicon{
+    width:20px !important;
+}
+
+.btnfamily div:nth-child(1), div:nth-child(2){
+    display: inline-block;
+}
+
+.btnfamily div:nth-child(2){
+    vertical-align:top;
+    margin-top:28px;
+    color: white;
+}
+
+/*editprofile*/
+
+.editprofpto{
+    text-align: center;
+}
+
+.editprofpto img{
+    margin-top:12%;
+    border-radius:100%;
+    width:110px;
+}
+
+.editprofchgpto{
+    width:100%; 
+    text-align:center;
+}
+
+.editprofchgpto a{
+    border: none;
+    font-style: italic;
+}
+
+.editprofchgnm{
+    width:95%;
+    margin-top:20%;
+    margin-left:3%;
+}
+
+div.editprofchgnm > label{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.editprofchgnm #userico{
+    width:7%;
+    margin-left:-3%;
+}
+
+.editprofchgnm #valuedata{
+    padding-right:10px;
+    padding-left:18px;
+    color:white;
+    width:100%;
+}
+
+.editprofchgnm #editico{
+    width:10%;
+    margin-right:2%;
+}
+
+.editprofchgpss{
+    margin-top:15%;
+    text-align: center;
+}
+
+.editprofchgpss a{
+    width: 50%;
+}
+
+#detailKet {
+    margin-top:0;
+}
+
+.private .button-clear{
+    max-height: none;
+}
+
+.btnaddpriv .button-clear{
+    max-height: none;
+}

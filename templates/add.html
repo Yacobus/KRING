@@ -1,0 +1,41 @@
+﻿<ion-view>
+    <ion-nav-title>
+        Private
+    </ion-nav-title>
+    <ion-nav-buttons side="left">
+        <button class="button button-icon ion-ios-arrow-back" ui-sref="app.private"></button>
+    </ion-nav-buttons>
+    <ion-content class="signup">
+
+        <h3>Add Contact</h3>
+       <form name="formadd" ng-submit="save()">
+           <label>Category</label>
+           <span style="color:#ffdc7d" ng-show="formadd.category.$dirty && formadd.category.$invalid">
+               <span ng-show="formadd.category.$error.required">*is required.</span>
+           </span>   
+           <select name="category" ng-model="add.category" required>
+               <option value="Family">Keluarga</option>
+               <option value="Services">Kumpulan Layanan Penting</option>
+           </select>
+           <label>Name</label>
+           <span style="color:#ffdc7d" ng-show="formadd.contact.$dirty && formadd.contact.$invalid">
+               <span ng-show="formadd.contact.$error.required">*is required.</span>
+           </span> 
+           <input name="contact" type="text" ng-model="add.name" required>
+           <label>Phone Number</label>
+           <span style="color:#ffdc7d" ng-show="formadd.phone.$dirty && formadd.phone.$invalid">
+               <span ng-show="formadd.phone.$error.required">*is required.</span>
+           </span> 
+           <input name="phone" type="tel" ng-model="add.phone" required>
+           
+           <div  class="btnaddpriv">
+               <button class="button button-clear" type="submit" 
+                       ng-disabled="formadd.category.$dirty && formadd.category.$invalid ||formadd.name.$dirty && formadd.name.$invalid ||
+                       formadd.phone.$dirty && formadd.phone.$invalid"><img src="img/simpan.png" /> </button>
+           </div>
+           
+       </form>
+       
+    </ion-content>
+
+</ion-view>
