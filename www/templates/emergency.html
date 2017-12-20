@@ -1,0 +1,46 @@
+﻿<ion-view>
+    <ion-nav-title>
+        Call
+    </ion-nav-title>
+    <ion-nav-buttons side="left">
+        <button class="button button-icon ion-ios-arrow-back" ui-sref="app.home"></button>
+    </ion-nav-buttons>
+       <ion-content class="call">
+        
+        <h3>Emergency</h3>
+        <div id="div-2">
+            <div class="list list-inset" style="width:85%">
+                <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search Here" ng-model="searchFilter">
+                </label>
+            </div>
+        </div>
+         <ion-list>        
+            <ion-item ng-repeat="telp in emergency | filter:searchFilter" class="call-item" >                                  
+                    <div class="button-clear" ng-click="CallNumber(telp)" >
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>{{telp.Nama}} </label>
+                                </td>
+                                <td rowspan="2">
+                                    <img src="img/call_now.png" style="width:100%" />
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>  {{telp.NoTelp}}</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                <div>                  
+                    <a id="btn-detail" href="#/app/detail" ng-click="showdetail(telp)" class="button button-clear icon-right ion-chevron-right button-light"> <u>Penjelasan lebih lanjut </u></a>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+</ion-view>

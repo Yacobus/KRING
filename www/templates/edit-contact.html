@@ -1,0 +1,37 @@
+﻿<ion-view view-title="Edit Contact">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon ion-ios-arrow-back" ng-click="goBack()"></button>
+    </ion-nav-buttons>
+    <ion-content class="signup">
+
+        <h3>Tambah</h3>
+        <form name="formedit" ng-submit="save()">
+            <label>Category</label>
+            <span style="color:#ffdc7d" ng-show="formedit.category.$dirty && formedit.category.$invalid">
+                <span ng-show="formedit.category.$error.required">*is required.</span>
+            </span> 
+            <select name="category" ng-model="contact.Category" required>
+                <option value="Family">Family</option>
+                <option value="Services">Personal Use Service</option>
+            </select>
+            <label>Name</label>
+            <span style="color:#ffdc7d" ng-show="formedit.contact.$dirty && formedit.contact.$invalid">
+                <span ng-show="formedit.contact.$error.required">*is required.</span>
+            </span>
+            <input name="contact" type="text" ng-model="contact.Name" required>
+            <label>Phone Number</label>
+            <span style="color:#ffdc7d" ng-show="formedit.phone.$dirty && formedit.phone.$invalid">
+                <span ng-show="formedit.phone.$error.required">*is required.</span>
+            </span> 
+            <input name="phone" type="tel" ng-model="contact.Phone" required>
+
+           
+            <div class="btnaddpriv">
+                <button class="button button-clear" type="submit" ng-disabled="formedit.category.$dirty && formedit.category.$invalid ||formedit.name.$dirty && formedit.name.$invalid ||
+                       formedit.phone.$dirty && formedit.phone.$invalid"><img src="img/simpan.png" /> </button>
+            </div>
+        </form>
+
+    </ion-content>
+
+</ion-view>

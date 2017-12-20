@@ -1,0 +1,36 @@
+﻿<ion-view cache-view="false">
+    <ion-nav-title>
+        Detail
+    </ion-nav-title>
+    <ion-nav-buttons side="left">
+        <button class="button button-icon ion-ios-arrow-back" ng-click="goBack()"></button>
+    </ion-nav-buttons>
+    <ion-content class="call">
+        <ion-item style="background-color:transparent;border:none">
+            <div>
+                <button class="button-clear" ng-click="CallNumber()">
+                    <table>
+                        <tr>
+                            <td style="width:70%;vertical-align:top;text-align:left;padding-left:5px">
+                                <label>{{detail.Nama}} </label>
+                            </td>
+                            <td rowspan="2" style="vertical-align:middle;background-color:#41B758;border-left:solid white">
+                                <img src="img/call_now.png" style="width:100%" />
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td style="text-align:right;padding-right:10px">
+                                <label>  {{detail.NoTelp}}</label>
+                            </td>
+                        </tr>
+                    </table>
+                </button>
+            </div>
+           
+        </ion-item>
+        <h3 id="detailKet">Keterangan</h3>
+       <p style="width:100%;text-align:justify;padding:15px;color:white;font-size:medium">{{detail.Ket}}</p> 
+    </ion-content>
+
+</ion-view>
